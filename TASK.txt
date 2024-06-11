@@ -1,0 +1,68 @@
+Szia Bálint,
+
+Íme a próbafeladat.
+
+Üdvözlettel,
+Péter
+----
+--- Feladat kiírás
+Az alábbi request-re érkezett válasz köré építs egy találati listát Flutterben. Kezeld ezt a találati listát egy nagyobb teoretikus applikáció részeként (kódszervezés szempontjából). Nem kell a válasz minden mezőjét felhasználnod, a minimum, hogy az ingatlanhoz tartozó képeket meg tudod mutatni, kiírod, hogy mikor frissült legutóbb, és ha van elérhető ár és alapterület, akkor azt megmutatod. Ha szeretnél valamilyen dizájnhoz igazodni, akkor az Ingatlanhirdetés Figyelő applikáció (android és iOS) találati listáját veheted alapul, de ez nem kötelező. Ha saját UI elképzelést mutatsz, annak is örülünk. Főleg az érdekel minket, hogy
+
+milyen architektúrális döntéseket hozol meg a feature építése közben, így kérlek kommentáld a kódodat a döntéseiddel,
+
+és ha szükségesnek érzed, a döntésekhez hozzáfűzött magyarázatokkal. Kérdés esetén szívesen állunk rendelkezésedre.
+
+request type: POST
+url: https://frontend.realmonitor.hu/api/v3/poli/list/hu?token=<TOKEN>
+body:
+{
+"from": 0,
+"size": 20,
+"sort": [
+{
+"price": {
+"order": "asc"
+}
+}
+],
+"exclude": [],
+"search": [
+{
+"status": "FOR_SALE",
+"estate": [
+"HOUSE"
+],
+"places": [
+{
+"id": "ChIJHyHKCNwKakcRICYeDCnEAAQ"
+},
+{
+"id": "ChIJ74hlFG4eakcRkGIeDCnEAAQ"
+}
+],
+"tags": {
+"include": [
+"normal"
+]
+},
+"hasImages": true,
+"priceDrop": {},
+"unitPrice": {},
+"size": {
+"min": 70
+},
+"description": " \"-peca\"",
+"floor": {},
+"room": {},
+"lotSize": {
+"min": 600
+},
+"heating": {
+"energySource": []
+},
+"price": {
+"min": 50000000
+}
+}
+]
+}

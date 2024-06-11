@@ -1,0 +1,30 @@
+name: realmonitor_test
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+################################################################################
+  flutter_riverpod:
+  freezed_annotation:
+  http:
+  json_annotation:
+  riverpod:
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+################################################################################
+  build_runner:
+  freezed:
+  json_serializable:
+
+flutter:
+  uses-material-design: true
